@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A small gift ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="bdayjs.js" defer></script>
+</head>
+
+<body>
+
+    <!-- SCREEN 1: WELCOME -->
+    <section id="welcome" class="screen active">
+        <div id="stars"></div>
+        <div id="moon"></div>
+
+        <div class="w-c">
+            <p class="intro">Something just for you...</p>
+
+            <h1>Hiii! Lovieeee ✨✨✨</h1>
+
+            <p class="message">
+                Think of this as a small universe I made for u.
+                Somewhere in this little universe,
+                there's a surprise waiting for you.
+            </p>
+
+            <button id="entry" class="pretty-btn">
+                Enter our world ♡
+            </button>
+        </div>
+    </section>
+
+
+    <!-- SCREEN 2: ENVELOPE -->
+    <section id="letter-screen" class="screen">
+        <div class="screen-content">
+
+            <p class="intro">You've got something special</p>
+            <h2>Apke liye chota sha letterr 💌</h2>
+            <p class="message">Kholo jiiii</p>
+
+            <button id="envelope" class="envelope"
+                    aria-label="Open your letter"
+                    aria-expanded="false">
+
+                <span class="envelope-back"></span>
+                <span class="envelope-paper"></span>
+                <span class="envelope-flap"></span>
+                <span class="envelope-front"></span>
+                <span class="envelope-seal">♡</span>
+
+            </button>
+
+            <div id="letter" class="letter-card hidden">
+                <p class="letter-heading">To my favourite person ♡</p>
+
+                <h3>Hey, Lovieeee!</h3>
+
+                <p>
+                    I wanted to make your birthday very special
+                    but unfortuunately I am broke so I tried to 
+                    make you happy by making this although I took
+                    help from the browser, but still I hope U will love it....
+                </p>
+
+                <p>
+                    Every part of this is made with you in my mind,
+                    And there's a lot more in it...
+                </p>
+
+                <p class="letter-signature">Made with dher saraaa pyaal ♡♡♡</p>
+
+                <button id="start-game" class="pretty-btn dark-btn">
+                    There's more! ✨
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SCREEN 3: MEMORY GAME -->
+    <section id="game-screen" class="screen">
+        <div class="screen-content">
+
+            <p class="intro">Ek chutku sha challenge</p>
+            <h2>Chotu sha game ♡</h2>
+
+            <p class="message">
+                Find the matching pairs to get to 
+                the next surprise!
+            </p>
+
+            <p id="game-status" class="game-status" aria-live="polite">
+                Pairs found: 0 / 6
+            </p>
+
+            <div id="game-board" class="game-board"></div>
+
+            <p id="match-message" class="match-message" aria-live="polite"></p>
+
+            <button id="restart-game" class="text-btn">
+                Restart game ↻
+            </button>
+
+            <div id="game-complete" class="hidden">
+                <h3>Urehh Ki dicheeennn,U did itt, 💗</h3>
+                <p>Now, next gipt...</p>
+
+                <button id="to-gallery" class="pretty-btn">
+                    Next gipt,
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SCREEN 4: POLAROID GALLERY -->
+    <section id="gallery-screen" class="screen">
+        <div class="screen-content wide-content">
+
+            <p class="intro">Little moments, big feelings</p>
+            <h2>My favouritesss 📸</h2>
+
+            <p class="message">
+                Some of the best images,
+            </p>
+
+            <div class="gallery">
+
+                <article class="polaroid">
+                    <div class="photo-frame">
+                        <img src="photos/memory1.jpg"
+                             alt="Our first special memory"
+                             loading="lazy">
+                    </div>
+                    <p> Masterpiece-1 ♡</p>
+                </article>
+
+                <article class="polaroid">
+                    <div class="photo-frame">
+                        <img src="photos/memory2.jpg"
+                             alt="A happy memory together"
+                             loading="lazy">
+                    </div>
+                    <p> Masterpiece-2✨</p>
+                </article>
+
+                <article class="polaroid">
+                    <div class="photo-frame">
+                        <img src="photos/memory3.jpg"
+                             alt="Another special moment"
+                             loading="lazy">
+                    </div>
+                    <p>A moment worth remembering 💗</p>
+                </article>
+
+                <article class="polaroid">
+                    <div class="photo-frame">
+                        <img src="photos/memory4.jpg"
+                             alt="A favourite photograph"
+                             loading="lazy">
+                    </div>
+                    <p>My favourite memory ♡</p>
+                </article>
+
+            </div>
+
+            <button id="to-cake" class="pretty-btn">
+                One more surprise 🎂
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- SCREEN 5: BIRTHDAY CAKE -->
+    <section id="cake-screen" class="screen">
+        <div class="screen-content">
+
+            <p class="intro">Make a little wish</p>
+            <h2>It's Cake Timeeee! 🎂</h2>
+
+            <p class="message">
+                Tap each candle to blow it out.
+                Andd while blowing the candles out remember to make a wishh...
+            </p>
+
+            <div class="cake-scene" role="group"
+                 aria-label="Birthday cake with three interactive candles">
+
+                <div class="candles">
+                    <button class="candle" aria-label="Blow out candle 1">
+                        <span class="flame"></span>
+                    </button>
+                    <button class="candle" aria-label="Blow out candle 2">
+                        <span class="flame"></span>
+                    </button>
+                    <button class="candle" aria-label="Blow out candle 3">
+                        <span class="flame"></span>
+                    </button>
+                </div>
+
+                <div class="cake-top"></div>
+                <div class="cake-body">
+                    <div class="cake-icing"></div>
+                    <span class="cake-heart">♡</span>
+                </div>
+                <div class="cake-plate"></div>
+
+            </div>
+
+            <p id="cake-message" class="message" aria-live="polite">
+                Three little wishes are waiting ✨
+            </p>
+
+            <button id="to-final" class="pretty-btn hidden">
+                Your final surprise ♡
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- SCREEN 6: FINAL LETTER -->
+    <section id="final-screen" class="screen">
+        <div id="final-hearts" aria-hidden="true"></div>
+        <div id="confetti" aria-hidden="true"></div>
+
+        <div class="screen-content">
+
+            <p class="intro">And finally...</p>
+
+            <h2>Happy Birthday, Lovieeee! ♡</h2>
+
+            <div class="final-letter">
+                <p>To my favourite person,</p>
+
+                <p>
+                    Hiee baccha piee, Happy Birthday again 
+                    today is a very special day for u and for me as well
+                    because 14/15 years ago you were born and I am grateful
+                    that u were it doesnt matter who is happy or unhappy from 
+                    u being here, always remember YOU are my EVERYTHING and I
+                    am the luckiest to have you!
+                    
+                </p>
+
+                <p>
+                    I wanted to make your birthday more special but you know
+                    that neither I am creative nor I have money to buy you 
+                    mehenge gipts although you never asked for one. Ik babe 
+                    I am always unavialable and never with you, I really am sorry 
+                    I hope you forgive me and again I will try to be better than 
+                    what I am today. Lets not spoil the mood.
+                </p>
+
+                <p>
+                    Thank you for being such a wonderful
+                    part of my life. I am truly greatful love.
+                </p>
+
+                <p class="letter-signature">
+                    Happy Birthday baccha piee ♡♡♡
+                </p>
+            </div>
+
+            <button id="replay" class="pretty-btn">
+                Start firse?
+            </button>
+
+        </div>
+    </section>
+
+</body>
+</html>
